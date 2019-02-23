@@ -1,0 +1,85 @@
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  height: 29em;
+  align-items: center; 
+}
+
+.flex-item {
+  display: flex;
+  font-size: 30px;
+  min-height: 200px;  /* Would use just `height` but Firefox is weird */
+  flex: 0 0 auto; /* 3 column grid */ 
+  width: 33.333%;
+  justify-content: center; 
+  align-items: center; 
+  margin: 1px; 
+}
+
+.flex-item:nth-child(1) {
+  min-height: 250px;
+}
+
+.flex-item:nth-child(2) {
+  min-height: 350px;
+}
+
+.flex-item:nth-child(3) { 
+}
+
+.flex-item:nth-child(4) {
+  min-height: 300px;
+}
+
+.flex-item:nth-child(5) {
+  min-height: 250px;
+}
+
+.flex-item:nth-child(6) {
+}
+
+.flex-item:nth-child(7) {
+  min-height: 250px;
+}
+
+.flex-item:nth-child(8) {
+}
+
+.flex-item:nth-child(9) {
+  min-height: 400px;
+}
+
+
+/* cosmetic styles */
+
+body {
+  font: 600 30px monospace;
+}
+
+.flex-item {
+  background: #95a5a6;
+  border-radius: 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  /* to account for padding */
+  color: #fff;
+  padding: 10px;
+}
+
+.flex-item:nth-child(6n + 1) {
+  background: #2ecc71;
+}
+.flex-item:nth-child(6n + 2) {
+  background: #3498db;
+}
+.flex-item:nth-child(6n + 3) {
+  background: #9b59b6;
+}
+.flex-item:nth-child(6n + 4) {
+  background: #f1c40f;
+}
+.flex-item:nth-child(6n + 5) {
+  background: #e67e22;
+}
+.flex-item:nth-child(6n) {
+  background: #e74c3c;
+}
